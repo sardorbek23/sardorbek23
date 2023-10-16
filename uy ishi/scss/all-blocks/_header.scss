@@ -1,0 +1,63 @@
+.header {
+    padding-top: 10px;
+
+    .container {
+        @include Flex;
+    }
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.nav__list {
+    display: flex;
+    gap: 33px;
+}
+
+.nav__link {
+    @include Link;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.btn {
+    border: none;
+    background-color: #fff;
+    display: none;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .nav__list {
+        box-shadow: 0px -100px 89px -11px rgba(40, 65, 89, 0.3) inset;
+        position: absolute;
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .btn__exit {
+        display: none;
+ }
+
+}
+
+.btn__menu--exit {
+    display: none;
+}
+
+.btn__exit--menu {
+    display: block;
+}
+
+.nav__blok {
+    @include Blok;
+}

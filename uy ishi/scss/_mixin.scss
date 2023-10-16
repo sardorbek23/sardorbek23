@@ -1,0 +1,66 @@
+@mixin Flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin Link{
+    color: #83888F;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    transition: all 0.7s ease;
+    width: 100%;
+}
+
+@mixin Blok{
+    border-radius: 3px;
+    font-family: "Barlow";
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    background-color: #c3d0e3;
+}
+
+@mixin Bg{
+    background: url("../../image/hero.png") no-repeat;
+    width: 100%;
+    max-width: 1280px;
+    height: 450px;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+@mixin Heading{
+    color: #FEFCF7;
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    max-width: 445px;
+    width: 100%;
+}
+
+@mixin text{
+    color: #FEFCF7;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    max-width: 445px;
+    width: 100%;
+}

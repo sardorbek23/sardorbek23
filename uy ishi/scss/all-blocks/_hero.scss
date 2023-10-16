@@ -1,0 +1,62 @@
+.hero {
+    margin-top: 45px;
+
+
+}
+
+.hero__bg {
+    @include Bg;
+}
+
+.hero__info {
+    padding-top: 137px;
+    margin-left: 85px;
+}
+
+.hero__heading {
+    @include Heading;
+}
+
+.hero__text {
+    @include text;
+}
+
+
+.hero {
+    animation: Hero 0.7s ease;
+}
+
+@keyframes Hero {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .hero__bg {
+        background: url("../../image/hero-tablet.png") no-repeat;
+        max-width: 689px;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+
+    }
+}
+
+@media only screen and (max-width:461px) {
+    .hero__bg {
+        background: url("../../image/hero-mobil.png") no-repeat;
+        max-width: 327px;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        margin: 0 auto;
+
+    }
+}
