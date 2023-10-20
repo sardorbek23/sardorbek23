@@ -1,0 +1,72 @@
+@mixin Link{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin Link{
+    &:hover{
+        text-decoration: underline;
+        color: #333333;
+    }
+}
+
+@mixin Btn{
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.115px;
+    margin-left: 400px;
+    background-color: #BA4270;
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+
+@mixin Img{
+    color: #FBFCFE;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+}
+
+@mixin Text{
+    width: 445px;
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@mixin Btn{
+    width: 150px;
+    height: 48px;
+    background-color: #1B262F;
+    cursor: pointer;
+    border-radius: 24px;
+    border: 1px solid #FBFCFE;
+    color: #FBFCFE;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.115px;
+    transition: all 0.7s ease;
+
+    &:hover{
+        background-color: #36536B;
+    }
+}
